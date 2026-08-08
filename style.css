@@ -179,3 +179,58 @@ footer{background:#251b18;color:#eee;text-align:center;padding:4rem}.social{opac
   height: 75px;
   border: 0;
 }
+
+
+/* v8 – mobil hero: image first, text below */
+@media (max-width: 768px) {
+  .hero, .hero-v4 {
+    display: block;
+    min-height: 0 !important;
+    height: auto !important;
+    padding-top: 66.64vw;
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+    background-color: var(--bg);
+  }
+
+  .hero .overlay, .hero-v4 .overlay {
+    position: static !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 1.6rem 1.25rem 1.8rem !important;
+    border-radius: 0 !important;
+    background: rgba(247,242,237,.96) !important;
+    border: 0 !important;
+    border-top: 1px solid rgba(123,63,50,.12) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    text-align: center;
+  }
+
+  .hero .overlay h1, .hero-v4 .overlay h1 {
+    font-size: clamp(2.45rem, 10vw, 3.1rem) !important;
+    line-height: 1;
+    margin: 0 0 .75rem;
+    color: var(--text);
+    text-shadow: none !important;
+  }
+
+  .hero .overlay p, .hero-v4 .overlay p {
+    max-width: 34rem;
+    margin: 0 auto 1.15rem;
+    font-size: .96rem;
+    line-height: 1.5;
+    color: var(--text);
+    text-shadow: none !important;
+  }
+
+  .hero .overlay .btn, .hero-v4 .overlay .btn {
+    margin: .2rem .2rem 0;
+    padding: .7rem 1rem;
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+}
