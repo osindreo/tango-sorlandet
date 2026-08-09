@@ -258,3 +258,92 @@ footer{background:#251b18;color:#eee;text-align:center;padding:4rem}.social{opac
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Tango i utelivet – demo */
+.tango-outreach {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.tango-outreach-card {
+  padding: 2.2rem;
+  border-radius: 26px;
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(320px, 1.1fr);
+  gap: 2.5rem;
+  align-items: center;
+  box-shadow: 0 18px 45px rgba(0,0,0,.10);
+}
+.tango-outreach-copy .eyebrow {
+  margin: 0 0 .55rem;
+  color: var(--accent);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+.tango-outreach-copy h2 {
+  margin: 0 0 1rem;
+  line-height: 1.08;
+}
+.tango-outreach-copy .lead {
+  font-size: 1.12rem;
+  line-height: 1.55;
+}
+.outreach-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin: 1.25rem 0;
+}
+.outreach-points span {
+  padding: .5rem .75rem;
+  border-radius: 999px;
+  background: rgba(123,63,50,.10);
+  color: var(--accent);
+  font-size: .88rem;
+  font-weight: 600;
+}
+.outreach-cta {
+  margin-bottom: 0;
+}
+.tango-outreach-video video {
+  display: block;
+  width: 100%;
+  max-height: 720px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #0a0b0d;
+  box-shadow: 0 12px 32px rgba(0,0,0,.20);
+}
+.video-caption {
+  margin: .8rem 0 0;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+.video-source {
+  margin: .45rem 0 0;
+  font-size: .72rem;
+  line-height: 1.4;
+  opacity: .58;
+}
+@media (max-width: 800px) {
+  .tango-outreach {
+    padding-top: .25rem;
+    padding-bottom: 3.5rem;
+  }
+  .tango-outreach-card {
+    grid-template-columns: 1fr;
+    padding: 1.35rem;
+    gap: 1.5rem;
+    border-radius: 20px;
+  }
+  .tango-outreach-copy h2 {
+    font-size: 2rem;
+  }
+  .tango-outreach-copy .lead {
+    font-size: 1.02rem;
+  }
+  .tango-outreach-video video {
+    border-radius: 12px;
+  }
+}
