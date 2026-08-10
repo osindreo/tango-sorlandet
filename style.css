@@ -164,6 +164,12 @@ footer{background:#251b18;color:#eee;text-align:center;padding:4rem}.social{opac
   border: 0;
 }
 
+.radio-player audio {
+  display: block;
+  width: min(100%, 420px);
+  height: 42px;
+}
+
 
 /* v8 – mobil hero: image first, text below */
 @media (max-width: 768px) {
