@@ -1,6 +1,6 @@
 const o=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add("show")));document.querySelectorAll(".reveal").forEach(x=>o.observe(x));
 
-// Tilfeldig rekkefølge i galleriet ved hver sidelasting/opplasting
+// Tilfeldig rekkefølge i galleriet ved hver sidelasting
 document.querySelectorAll(".idebank").forEach(gallery => {
   const images = Array.from(gallery.children);
 

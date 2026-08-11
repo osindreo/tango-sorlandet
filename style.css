@@ -353,3 +353,101 @@ footer{background:#251b18;color:#eee;text-align:center;padding:4rem}.social{opac
     border-radius: 12px;
   }
 }
+
+
+/* v4 – alternative / modern tango music */
+.alternative-music {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(123,63,50,.25);
+}
+.alternative-music h3 {
+  margin: 0 0 .35rem;
+  font-size: 1.35rem;
+}
+.alternative-music p {
+  margin: .55rem 0;
+}
+.spotify-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .9rem;
+}
+.spotify-links .btn {
+  margin: 0;
+}
+.music-note {
+  font-size: .95rem;
+  opacity: .8;
+}
+@media (max-width: 600px) {
+  .spotify-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .spotify-links .btn {
+    text-align: center;
+  }
+}
+
+
+/* Tango Sørlandet v13 – new authentic photo + modern tango */
+.instructor img{
+  aspect-ratio:3 / 2;
+  object-fit:cover;
+  object-position:center;
+  box-shadow:0 14px 32px rgba(0,0,0,.14);
+}
+.photo-note{
+  font-size:.95rem;
+  opacity:.82;
+  border-left:3px solid var(--accent);
+  padding-left:1rem;
+}
+.alternative-music{
+  margin-top:2rem;
+  padding:1.5rem;
+  border-radius:18px;
+  background:rgba(255,255,255,.28);
+  border:1px solid rgba(123,63,50,.12);
+}
+.alternative-music h3{margin-top:0;font-size:1.55rem}
+.music-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin:1.2rem 0;
+}
+.music-tags span{
+  padding:.45rem .8rem;
+  border-radius:999px;
+  background:rgba(123,63,50,.10);
+  font-size:.88rem;
+}
+.spotify-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  margin-top:1rem;
+}
+.spotify-links .btn{margin:0}
+.music-note{
+  font-size:.9rem;
+  opacity:.78;
+  margin-bottom:0;
+}
+@media(max-width:768px){
+  .alternative-music{padding:1.15rem}
+  .spotify-links .btn{width:100%;text-align:center}
+}
+
+
+/* Partner / contributor section */
+.partner-call { margin-top: 2rem; border: 1px solid rgba(255,255,255,.18); }
+.partner-call .lead { font-size: 1.08rem; }
+.partner-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:1.5rem 0; }
+.partner-grid > div { padding:1.1rem; border-radius:14px; background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.10); }
+.partner-grid h3 { margin-top:0; }
+.partner-closing { margin-top:1.2rem; }
+@media (max-width:800px) { .partner-grid { grid-template-columns:1fr; } }
