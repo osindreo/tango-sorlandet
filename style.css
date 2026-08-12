@@ -481,3 +481,6 @@ footer{background:#251b18;color:#eee;text-align:center;padding:4rem}.social{opac
   .calendar-intro,.calendar-portal,.calendar-join{padding:1.25rem}
   .calendar-image figcaption{font-size:.72rem}
 }
+
+/* Tango etiquette */
+.etiquette-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0}.etiquette-grid>div{padding:1rem 1.1rem;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.035)}.etiquette-grid h3{margin:.1rem 0 .45rem}.etiquette-grid p{margin:0}.tango-outreach-video video{width:100%;height:auto;display:block;border-radius:18px}@media(max-width:700px){.etiquette-grid{grid-template-columns:1fr}}
