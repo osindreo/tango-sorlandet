@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=18">
+<link rel="stylesheet" href="style.css?v=21">
 </head>
 <body>
 
@@ -48,6 +48,44 @@
   </div>
 </section>
 
+<section class="section radio-section" id="radio">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">LYTT TIL TANGO</p>
+      <h2>Tangomusikk – døgnet rundt</h2>
+    </div>
+    <span class="radio-note">To håndplukkede nettradiokanaler</span>
+  </div>
+
+  <div class="radio-grid">
+    <article class="radio-card">
+      <div class="radio-badge">ARGENTINE<br><strong>TANGO</strong><br>RADIO</div>
+      <div class="radio-copy">
+        <p class="eyebrow">ARGENTINA / BUDAPEST</p>
+        <h3>Argentine Tango Radio</h3>
+        <p>Dansbar argentinsk tango – klassikere fra gullalderen og videre.</p>
+        <audio controls preload="none">
+          <source src="https://ais-edge94-nyc04.cdnstream.com/2202_128.mp3" type="audio/mpeg">
+        </audio>
+        <a class="text-link" href="https://www.argentinetangoradio.com/" target="_blank" rel="noopener noreferrer">Åpne Argentine Tango Radio →</a>
+      </div>
+    </article>
+
+    <article class="radio-card">
+      <div class="radio-badge passion">TANGO<br><strong>PASIÓN</strong><br>RADIO</div>
+      <div class="radio-copy">
+        <p class="eyebrow">ITALIA</p>
+        <h3>Tango Pasión Radio 🇮🇹</h3>
+        <p>Reklamefri nettradio fra Italia – 24/7 ren tango med lidenskap.</p>
+        <audio controls preload="none">
+          <source src="https://nr1.newradio.it:19180/stream" type="audio/mpeg">
+        </audio>
+        <a class="text-link" href="https://tangopasionradio.com/" target="_blank" rel="noopener noreferrer">Åpne Tango Pasión Radio →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
 <section class="section section-soft" id="skjer">
   <div class="section-head">
     <div>
@@ -61,8 +99,8 @@
     <article class="feature-card">
       <span class="card-icon">📅</span>
       <h3>Arrangementer</h3>
-      <p>Finn kurs, practicaer, milongaer, workshops og andre tangoaktiviteter på Sørlandet.</p>
-      <a class="btn" href="https://www.facebook.com/profile.php?id=61584513205461" target="_blank" rel="noopener noreferrer">Se kommende arrangementer</a>
+      <p>Felles kalender for tangoarrangementer fra Tango Kristiansand og Arendal Tangoklubb.</p>
+      <a class="btn" href="#kalender">Se kalenderen</a>
     </article>
     <article class="feature-card">
       <span class="card-icon">💃</span>
@@ -178,14 +216,23 @@
     </article>
   </div>
 
-  <div class="calendar-call" id="kalender">
-    <div>
-      <p class="eyebrow">SAMLE AKTIVITETEN</p>
-      <h3>Foreløpig samlende kalender</h3>
-      <p>Inntil vi eventuelt finner en egen løsning for Sørlandet, kan <strong>Tangokalender.no</strong> være et naturlig sted å samle oversikten over tangoarrangementer i regionen.</p>
-      <a class="text-link" href="https://tangokalender.no/" target="_blank" rel="noopener noreferrer">Se Tangokalender.no →</a>
+  <div class="calendar-embed" id="kalender">
+    <div class="calendar-intro">
+      <div>
+        <p class="eyebrow">FELLES KALENDER</p>
+        <h3>Kristiansand + Arendal</h3>
+        <p>Her vises <strong>Tangokalender.no</strong> i listevisning som felles oversikt over arrangementer fra <strong>Tango Kristiansand</strong> og <strong>Arendal Tangoklubb</strong>. Filteret ligger nederst i kalenderen.</p>
+      </div>
+      <a class="btn" href="https://tangokalender.no/" target="_blank" rel="noopener noreferrer">Åpne Tangokalender.no</a>
     </div>
-    <img src="assets/felles-kalender-portal.png" alt="Illustrasjon av en felles kalenderportal for tango på Sørlandet">
+    <div class="calendar-frame-wrap">
+      <iframe src="https://tangokalender.no/" title="Tangokalender – felles kalender for Kristiansand og Arendal" loading="lazy"></iframe>
+    </div>
+    <div class="calendar-note">
+      <strong>Tango Sørlandet – supplement</strong>
+      <p>I tillegg presenterer Tango Sørlandet egne arrangementer, aktiviteter og initiativer som et supplement til kalenderen.</p>
+      <p><strong>Merk:</strong> Tango Sørlandet er ikke ansvarlig for opplysningene i kalenderen. Informasjonen kan endres. Sjekk alltid klubbens egen nettside eller Facebook-side for oppdatert informasjon før du møter opp.</p>
+    </div>
   </div>
 </section>
 
