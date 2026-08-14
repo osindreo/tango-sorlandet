@@ -188,3 +188,13 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 
 .language-switcher{display:flex;gap:4px;align-items:center;margin-left:auto;padding-left:14px}.lang-btn{border:1px solid rgba(255,255,255,.25);background:transparent;color:inherit;border-radius:999px;padding:6px 9px;font:600 12px/1 Inter,sans-serif;cursor:pointer;opacity:.7}.lang-btn:hover,.lang-btn.active{opacity:1;background:rgba(255,255,255,.12)}
 @media (max-width:900px){.nav{flex-wrap:wrap}.language-switcher{order:3;width:100%;justify-content:flex-end;padding-left:0;margin-top:4px}}
+
+.calendar-link-note {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.calendar-link-note h3 { margin: 0 0 8px; }
+.calendar-link-note p:not(.eyebrow) { margin-bottom: 12px; }
+
+.own-events{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem}.own-event-empty{border:1px solid var(--line);background:var(--card);border-radius:1.25rem;padding:2rem;max-width:760px}.own-event-empty .card-icon{display:block;font-size:1.5rem;margin-bottom:.75rem}.own-event-empty h3{margin:.2rem 0 .6rem}.own-event-empty p{margin:0;color:var(--muted)}
