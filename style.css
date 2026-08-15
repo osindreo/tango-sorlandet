@@ -272,3 +272,9 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
     width: 100%;
   }
 }
+
+.history-content{max-width:900px;padding:0 0 1.5rem}
+.history-content h3{margin:1.5rem 0 .45rem}
+.history-content p{max-width:850px}
+.source-links{margin-top:1.5rem;padding-top:1rem;border-top:1px solid rgba(0,0,0,.1)}
+.archetype-grid{padding-bottom:1rem}
