@@ -278,3 +278,12 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .history-content p{max-width:850px}
 .source-links{margin-top:1.5rem;padding-top:1rem;border-top:1px solid rgba(0,0,0,.1)}
 .archetype-grid{padding-bottom:1rem}
+
+.reel-library-content{padding:0 0 1.25rem}
+.reel-library-content>p{max-width:850px;margin-bottom:1rem}
+.reel-list{margin:0;padding-left:1.4rem;columns:3;column-gap:2rem}
+.reel-list li{break-inside:avoid;margin:.25rem 0}
+.reel-list a{color:var(--accent);text-decoration:none;font-size:.94rem}
+.reel-list a:hover{text-decoration:underline}
+@media (max-width:900px){.reel-list{columns:2}}
+@media (max-width:560px){.reel-list{columns:1}}
