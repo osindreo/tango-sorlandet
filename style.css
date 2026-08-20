@@ -287,3 +287,14 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .reel-list a:hover{text-decoration:underline}
 @media (max-width:900px){.reel-list{columns:2}}
 @media (max-width:560px){.reel-list{columns:1}}
+
+
+/* Buenos Aires video – avsluttende stemningsinnslag */
+.buenos-aires-video{margin-top:3.5rem;max-width:1059px;margin-left:auto;margin-right:auto;overflow:hidden;background:#17100e;border-radius:22px;border:1px solid rgba(255,255,255,.12)}
+.buenos-aires-intro{padding:1.7rem 1.8rem 1.2rem;text-align:center;max-width:850px;margin:0 auto}
+.buenos-aires-intro h3,.buenos-aires-copy h3{color:#fff;margin:.2rem 0 .7rem}
+.buenos-aires-intro p:not(.eyebrow),.buenos-aires-copy p{color:#eadbd4;margin-bottom:0}
+.buenos-aires-frame{position:relative;width:100%;aspect-ratio:16/9;background:#080707}
+.buenos-aires-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.buenos-aires-copy{padding:1.25rem 1.8rem 1.6rem;text-align:center}
+@media(max-width:700px){.buenos-aires-video{margin-top:2.5rem;border-radius:18px}.buenos-aires-intro{padding:1.35rem 1.2rem 1rem}.buenos-aires-copy{padding:1.1rem 1.2rem 1.35rem}}
