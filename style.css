@@ -337,3 +337,30 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .course-card p{color:var(--muted);max-width:42rem}
 .course-card .btn{margin-top:.45rem}
 @media(max-width:700px){.course-grid{grid-template-columns:1fr}.september-courses{padding-top:3.5rem;padding-bottom:3.5rem}.course-card{padding:1.6rem}.course-card h3{font-size:1.9rem}}
+
+/* Sørlandet Tango Stories */
+.stories-call{
+  margin-top:2rem;
+  display:grid;
+  grid-template-columns:1.5fr .9fr;
+  gap:2rem;
+  align-items:center;
+  background:rgba(123,63,50,.07);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:2rem;
+}
+.stories-call h3{font-size:2rem;margin-bottom:.8rem}
+.stories-call .small{color:var(--muted);font-size:.92rem}
+.story-cta{
+  background:rgba(255,255,255,.72);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:1.5rem;
+  text-align:center;
+}
+.story-cta .btn{margin-top:.7rem}
+@media(max-width:700px){
+  .stories-call{grid-template-columns:1fr;padding:1.4rem}
+  .stories-call h3{font-size:1.65rem}
+}
