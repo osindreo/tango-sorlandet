@@ -39,6 +39,77 @@ const T = {"no":{"Hva skjer":"Hva skjer","Bli med":"Bli med","Tango overalt":"Ta
     "Bli tangoformidler":"Conviértete en promotor de tango"
   });
 
+
+  /* V50 translations for new and recently added content */
+  Object.assign(T.en, {
+  "Ny generasjon": "New generation",
+  "TANGO FOR ALLE ALDRE": "TANGO FOR ALL AGES",
+  "Tror du argentinsk tango bare er for eldre?": "Do you think Argentine tango is only for older people?",
+  "Se selv. Argentinsk tango er levende, sosial og i stadig utvikling – og en ny generasjon dansere gjør tango til sin egen.": "See for yourself. Argentine tango is alive, social and constantly evolving – and a new generation of dancers is making it their own.",
+  "Du trenger ikke være ung for å begynne – men tango er heller ikke bare for eldre. Det viktigste er nysgjerrighet, musikk og lysten til å danse.": "You do not have to be young to start – but tango is not only for older people either. What matters most is curiosity, music and the desire to dance.",
+  "Argentinsk tango – for alle aldre": "Argentine tango – for all ages",
+  "NY I TANGO?": "NEW TO TANGO?",
+  "Tangohelger med grunnkurs i september": "Tango weekends with beginner courses in September",
+  "Har du lyst til å lære argentinsk tango? I september arrangeres det grunnkurs i både Kristiansand og Arendal.": "Would you like to learn Argentine tango? In September, beginner courses are offered in both Kristiansand and Arendal.",
+  "To gode muligheter til å komme i gang – og bare rundt 45 minutters kjøring mellom byene. For oppdatert informasjon og påmelding, se klubbenes egne nettsider.": "Two great opportunities to get started – and only about a 45-minute drive between the cities. For updated information and registration, see the clubs’ own websites.",
+  "Grunnkurs i tango": "Beginner tango course",
+  "En tangohelg for deg som vil ta de første stegene i argentinsk tango. Ingen forkunnskaper nødvendig.": "A tango weekend for anyone who wants to take their first steps in Argentine tango. No previous experience needed.",
+  "Mer info hos Tango Kristiansand →": "More information from Tango Kristiansand →",
+  "En tangohelg med grunnleggende undervisning og en fin introduksjon til musikken, dansen og miljøet.": "A tango weekend with basic instruction and a good introduction to the music, dance and community.",
+  "Mer info hos Arendal Tangoklubb →": "More information from Arendal Tangoklubb →",
+  "AKTUELL IDÉ": "CURRENT IDEA",
+  "Vi undersøker hvilke fredagskvelder utover høsten og vinteren som passer best for tangueros på Sørlandet. Dato avtales med Vinbaren på Mølla.": "We are exploring which Friday evenings during autumn and winter work best for tangueros in Southern Norway. The date will be agreed with Vinbaren på Mølla.",
+  "Fra en tidligere tangokveld på Vinbaren på Mølla: Sindre Oftebro og Elena Yakovelva viste frem tango for gjestene.": "From an earlier tango evening at Vinbaren på Mølla: Sindre Oftebro and Elena Yakovelva presented tango to the guests.",
+  "Foto: Per-Øyvind Nordberg": "Photo: Per-Øyvind Nordberg",
+  "Teknikk og musikalske øvelser – videosamling": "Technique and musical exercises – video collection",
+  "En foreløpig samling av korte videoer med særlig vekt på fundamental teknikk i argentinsk tango og enkelte musikalske øvelser. Samlingen er ikke kategorisert ennå og vil bli videreutviklet etter hvert.": "A preliminary collection of short videos focusing especially on fundamental Argentine tango technique and selected musical exercises. The collection is not yet categorized and will be developed further over time.",
+  "Se også Tangokalender.no": "See also Tangokalender.no",
+  "Tangokalender.no har en egen oversikt over tangoarrangementer. Bruk den som et supplement når du vil se hva som skjer.": "Tangokalender.no has its own overview of tango events. Use it as a supplement when you want to see what is happening.",
+  "Besøk Tangokalender.no →": "Visit Tangokalender.no →",
+  "BLI KJENT MED TANGO": "GET TO KNOW TANGO",
+  "Nysgjerrig?": "Curious?",
+  "Hva er argentinsk tango?": "What is Argentine tango?",
+  "En improvisert pardans med fokus på kommunikasjon, musikalitet og nærvær. Hver dans er unik.": "An improvised partner dance focused on communication, musicality and presence. Every dance is unique.",
+  "Hvordan begynner jeg?": "How do I get started?",
+  "Du trenger ingen forkunnskaper. Start rolig, bli kjent med musikken og oppdag hvordan to mennesker kan bevege seg sammen.": "You do not need any previous experience. Start gently, get to know the music and discover how two people can move together.",
+  "Hva med musikken?": "What about the music?",
+  "Fra klassiske orkestre som Di Sarli, D'Arienzo, Pugliese og Troilo til nuevo tango, neotango og electrotango.": "From classic orchestras such as Di Sarli, D’Arienzo, Pugliese and Troilo to nuevo tango, neotango and electrotango."
+});
+  Object.assign(T.es, {
+  "Ny generasjon": "Nueva generación",
+  "TANGO FOR ALLE ALDRE": "TANGO PARA TODAS LAS EDADES",
+  "Tror du argentinsk tango bare er for eldre?": "¿Crees que el tango argentino es solo para personas mayores?",
+  "Se selv. Argentinsk tango er levende, sosial og i stadig utvikling – og en ny generasjon dansere gjør tango til sin egen.": "Compruébalo tú mismo. El tango argentino está vivo, es social y evoluciona constantemente, y una nueva generación de bailarines lo hace suyo.",
+  "Du trenger ikke være ung for å begynne – men tango er heller ikke bare for eldre. Det viktigste er nysgjerrighet, musikk og lysten til å danse.": "No tienes que ser joven para empezar, pero el tango tampoco es solo para personas mayores. Lo más importante es la curiosidad, la música y las ganas de bailar.",
+  "Argentinsk tango – for alle aldre": "Tango argentino – para todas las edades",
+  "NY I TANGO?": "¿NUEVO EN EL TANGO?",
+  "Tangohelger med grunnkurs i september": "Fines de semana de tango con cursos para principiantes en septiembre",
+  "Har du lyst til å lære argentinsk tango? I september arrangeres det grunnkurs i både Kristiansand og Arendal.": "¿Te gustaría aprender tango argentino? En septiembre se organizan cursos para principiantes tanto en Kristiansand como en Arendal.",
+  "To gode muligheter til å komme i gang – og bare rundt 45 minutters kjøring mellom byene. For oppdatert informasjon og påmelding, se klubbenes egne nettsider.": "Dos buenas oportunidades para empezar, y solo unos 45 minutos en coche entre las ciudades. Para información actualizada e inscripción, consulta las páginas web de los clubes.",
+  "Grunnkurs i tango": "Curso de tango para principiantes",
+  "En tangohelg for deg som vil ta de første stegene i argentinsk tango. Ingen forkunnskaper nødvendig.": "Un fin de semana de tango para quienes quieran dar sus primeros pasos en el tango argentino. No se necesitan conocimientos previos.",
+  "Mer info hos Tango Kristiansand →": "Más información en Tango Kristiansand →",
+  "En tangohelg med grunnleggende undervisning og en fin introduksjon til musikken, dansen og miljøet.": "Un fin de semana de tango con enseñanza básica y una buena introducción a la música, el baile y la comunidad.",
+  "Mer info hos Arendal Tangoklubb →": "Más información en Arendal Tangoklubb →",
+  "AKTUELL IDÉ": "IDEA ACTUAL",
+  "Vi undersøker hvilke fredagskvelder utover høsten og vinteren som passer best for tangueros på Sørlandet. Dato avtales med Vinbaren på Mølla.": "Estamos explorando qué viernes durante el otoño y el invierno funcionan mejor para los tangueros del sur de Noruega. La fecha se acordará con Vinbaren på Mølla.",
+  "Fra en tidligere tangokveld på Vinbaren på Mølla: Sindre Oftebro og Elena Yakovelva viste frem tango for gjestene.": "De una noche de tango anterior en Vinbaren på Mølla: Sindre Oftebro y Elena Yakovelva mostraron tango a los invitados.",
+  "Foto: Per-Øyvind Nordberg": "Foto: Per-Øyvind Nordberg",
+  "Teknikk og musikalske øvelser – videosamling": "Técnica y ejercicios musicales – colección de vídeos",
+  "En foreløpig samling av korte videoer med særlig vekt på fundamental teknikk i argentinsk tango og enkelte musikalske øvelser. Samlingen er ikke kategorisert ennå og vil bli videreutviklet etter hvert.": "Una colección preliminar de vídeos cortos con especial énfasis en la técnica fundamental del tango argentino y algunos ejercicios musicales. La colección aún no está categorizada y se irá desarrollando con el tiempo.",
+  "Se også Tangokalender.no": "Consulta también Tangokalender.no",
+  "Tangokalender.no har en egen oversikt over tangoarrangementer. Bruk den som et supplement når du vil se hva som skjer.": "Tangokalender.no tiene su propio calendario de eventos de tango. Úsalo como complemento cuando quieras ver qué está pasando.",
+  "Besøk Tangokalender.no →": "Visita Tangokalender.no →",
+  "BLI KJENT MED TANGO": "CONOCE EL TANGO",
+  "Nysgjerrig?": "¿Tienes curiosidad?",
+  "Hva er argentinsk tango?": "¿Qué es el tango argentino?",
+  "En improvisert pardans med fokus på kommunikasjon, musikalitet og nærvær. Hver dans er unik.": "Un baile de pareja improvisado centrado en la comunicación, la musicalidad y la presencia. Cada baile es único.",
+  "Hvordan begynner jeg?": "¿Cómo empiezo?",
+  "Du trenger ingen forkunnskaper. Start rolig, bli kjent med musikken og oppdag hvordan to mennesker kan bevege seg sammen.": "No necesitas conocimientos previos. Empieza con calma, conoce la música y descubre cómo dos personas pueden moverse juntas.",
+  "Hva med musikken?": "¿Y la música?",
+  "Fra klassiske orkestre som Di Sarli, D'Arienzo, Pugliese og Troilo til nuevo tango, neotango og electrotango.": "Desde orquestas clásicas como Di Sarli, D’Arienzo, Pugliese y Troilo hasta nuevo tango, neotango y electrotango."
+});
+
   const baseText = new Map();
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   let node;
@@ -59,4 +130,3 @@ const T = {"no":{"Hva skjer":"Hva skjer","Bli med":"Bli med","Tango overalt":"Ta
 
   document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => apply(b.dataset.lang)));
   apply(localStorage.getItem('tangoSorlandet_language') || 'no');
-})();
