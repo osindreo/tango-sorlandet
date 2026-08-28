@@ -371,3 +371,12 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .young-tango-copy{padding:1.8rem 1.8rem 1.2rem;text-align:center;max-width:850px;margin:0 auto}.young-tango-copy h3{font-size:clamp(2rem,4vw,3.3rem);margin:.2rem 0 .7rem}.young-tango-copy p{color:var(--muted);margin:0 auto;max-width:720px}.young-tango-frame{position:relative;width:100%;aspect-ratio:16/9;background:#080707}.young-tango-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}.young-tango-note{padding:1.2rem 1.8rem 1.6rem;text-align:center;color:var(--muted);margin:0}
 /* På mobil kan hele menyen fortsatt nås uten at den blir presset sammen. */
 @media(max-width:700px){.young-tango{border-radius:18px}.young-tango-copy{padding:1.35rem 1.15rem 1rem}.young-tango-note{padding:1rem 1.15rem 1.25rem}.nav{align-items:flex-start}.nav .links{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:.35rem;scrollbar-width:thin}.nav .links a{white-space:nowrap;flex:0 0 auto}.language-switcher{flex:0 0 auto}}
+
+
+/* Teknikk – arbeidsutkast */
+.draft-label{display:inline-block;margin-left:.65rem;padding:.22rem .55rem;border-radius:999px;background:#ead8ce;color:var(--accent);font:700 .68rem/1 Inter,Arial,sans-serif;letter-spacing:.08em;vertical-align:middle}
+.draft-intro,.draft-note{max-width:820px;color:var(--muted)}
+.draft-intro{padding:1rem 1.1rem;background:#f5ece5;border-left:3px solid var(--accent);border-radius:10px}
+.draft-note{margin-top:1.2rem;font-size:.92rem;font-style:italic}
+.teaching-plan,.note-list{grid-template-columns:repeat(2,1fr)}
+@media(max-width:700px){.teaching-plan,.note-list{grid-template-columns:1fr}}
