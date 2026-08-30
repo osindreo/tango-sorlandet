@@ -380,3 +380,9 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .draft-note{margin-top:1.2rem;font-size:.92rem;font-style:italic}
 .teaching-plan,.note-list{grid-template-columns:repeat(2,1fr)}
 @media(max-width:700px){.teaching-plan,.note-list{grid-template-columns:1fr}}
+
+/* V58 – video list: tentative thematic grouping through order and subtle spacing.
+   No category headings are shown; grouping can be revised later. */
+.reel-list li.reel-group-start{margin-top:1.15rem;padding-top:.55rem;border-top:1px solid rgba(255,255,255,.10)}
+.reel-list li.reel-group-start:first-child{margin-top:.25rem}
+
