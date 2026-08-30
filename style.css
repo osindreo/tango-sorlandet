@@ -397,3 +397,149 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 }
 .social-dance-message .lead{margin-bottom:.45rem}
 .social-dance-message p:last-child{margin-bottom:0}
+
+
+/* V62 – arrangements-/demo-carousel
+   The carousel is intentionally part of "Kommende arrangementer".
+   Every fictional/demo slide is visibly labelled to avoid confusion with real events. */
+.demo-notice{
+  margin-top:1.2rem;
+  padding:1rem 1.15rem;
+  border:1px solid rgba(123,63,50,.22);
+  border-left:4px solid var(--accent);
+  border-radius:12px;
+  background:#f5eae2;
+  color:#5e514b;
+  font-size:.94rem;
+}
+.event-showcase{
+  position:relative;
+  margin-top:2.5rem;
+  padding-bottom:3rem;
+}
+.event-showcase-viewport{
+  overflow:hidden;
+  border-radius:24px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  background:#17110f;
+}
+.event-showcase-track{
+  position:relative;
+  width:100%;
+  min-height:430px;
+}
+.event-showcase-slide{
+  position:absolute;
+  inset:0;
+  display:none;
+  pointer-events:none;
+}
+.event-showcase-slide.active{
+  display:block;
+  pointer-events:auto;
+  animation:showcaseFade .45s ease both;
+}
+@keyframes showcaseFade{
+  from{opacity:0}
+  to{opacity:1}
+}
+.event-showcase-slide img{
+  display:block;
+  width:100%;
+  height:clamp(330px,48vw,560px);
+  object-fit:cover;
+}
+.event-showcase-caption{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:min(620px,78%);
+  padding:1.5rem 1.7rem 1.6rem;
+  color:#fff;
+  background:linear-gradient(90deg,rgba(18,11,9,.94),rgba(18,11,9,.72),transparent);
+}
+.event-showcase-caption h3{
+  font-size:clamp(2rem,4vw,3.4rem);
+  margin:.35rem 0 .45rem;
+}
+.event-showcase-caption p{
+  margin:0;
+  max-width:560px;
+  color:#f0e4dd;
+}
+.showcase-label{
+  display:inline-block;
+  padding:.35rem .7rem;
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  font:700 .72rem/1 Inter,Arial,sans-serif;
+  letter-spacing:.08em;
+}
+.event-showcase-arrow{
+  position:absolute;
+  top:45%;
+  z-index:3;
+  width:46px;
+  height:46px;
+  border:0;
+  border-radius:50%;
+  background:rgba(255,250,246,.92);
+  color:var(--accent);
+  font-size:2.2rem;
+  line-height:1;
+  cursor:pointer;
+  box-shadow:0 5px 20px rgba(0,0,0,.18);
+}
+.event-showcase-arrow:hover{transform:scale(1.05)}
+.event-showcase-arrow.prev{left:-20px}
+.event-showcase-arrow.next{right:-20px}
+.event-showcase-dots{
+  position:absolute;
+  bottom:.45rem;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:4;
+  display:flex;
+  gap:.5rem;
+}
+.event-showcase-dots button{
+  width:10px;
+  height:10px;
+  padding:0;
+  border:1px solid rgba(123,63,50,.35);
+  border-radius:50%;
+  background:#fff;
+  cursor:pointer;
+}
+.event-showcase-dots button.active{background:var(--accent)}
+.showcase-timing{
+  margin:.7rem 0 0;
+  text-align:center;
+  color:var(--muted);
+  font-size:.82rem;
+}
+@media(max-width:700px){
+  .event-showcase{margin-top:1.8rem;padding-bottom:2.7rem}
+  .event-showcase-viewport{border-radius:18px}
+  .event-showcase-track{min-height:440px}
+  .event-showcase-slide img{height:440px}
+  .event-showcase-caption{
+    width:100%;
+    padding:1.1rem 1rem 1.2rem;
+    background:linear-gradient(0deg,rgba(18,11,9,.95),rgba(18,11,9,.78),transparent);
+  }
+  .event-showcase-caption h3{font-size:2rem}
+  .event-showcase-caption p{font-size:.9rem;line-height:1.45}
+  .event-showcase-arrow{top:42%;width:40px;height:40px;font-size:1.9rem}
+  .event-showcase-arrow.prev{left:8px}
+  .event-showcase-arrow.next{right:8px}
+  .demo-notice{font-size:.88rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .event-showcase-slide.active{animation:none}
+}
+
+/* Reklamevisningen bruker ferdig komponerte bilder – ingen ekstra tekst oppå bildene. */
+.event-showcase-caption{display:none!important}
