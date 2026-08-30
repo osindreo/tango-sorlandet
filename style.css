@@ -386,3 +386,14 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .reel-list li.reel-group-start{margin-top:1.15rem;padding-top:.55rem;border-top:1px solid rgba(255,255,255,.10)}
 .reel-list li.reel-group-start:first-child{margin-top:.25rem}
 
+
+/* Social-dance / bottom-up homepage additions */
+.social-dance-message{
+  margin:2.5rem 0 0;
+  padding:1.4rem 1.5rem;
+  border-left:4px solid var(--accent);
+  background:rgba(123,63,50,.06);
+  border-radius:0 16px 16px 0;
+}
+.social-dance-message .lead{margin-bottom:.45rem}
+.social-dance-message p:last-child{margin-bottom:0}
