@@ -399,7 +399,7 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .social-dance-message p:last-child{margin-bottom:0}
 
 
-/* V71 – responsive image showcase under Kommende arrangementer */
+/* V73 – responsive image showcase under Kommende arrangementer */
 .event-showcase{
   position:relative;
   margin-top:2.5rem;
@@ -421,7 +421,7 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .event-showcase-slide{
   display:none;
   min-width:0;
-  aspect-ratio:4/3;
+  aspect-ratio:5/8;
 }
 .event-showcase-slide.active{
   display:block;
@@ -441,7 +441,7 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
   .event-showcase{margin-top:1.8rem}
   .event-showcase-viewport{border-radius:18px}
   .event-showcase-track{grid-template-columns:1fr;min-height:0}
-  .event-showcase-slide{aspect-ratio:4/3}
+  .event-showcase-slide{aspect-ratio:5/8}
 }
 @media(prefers-reduced-motion:reduce){
   .event-showcase-slide.active{animation:none}
