@@ -1,52 +1,57 @@
 const o=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add("show")));document.querySelectorAll(".reveal").forEach(x=>o.observe(x));
 
-
-/* V62 – four-second showcase carousel */
+/* V71 – responsive event image showcase: 3 desktop / 2 tablet / 1 mobile, 5 seconds. */
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector(".event-showcase");
   if (!carousel) return;
-
   const slides = [...carousel.querySelectorAll(".event-showcase-slide")];
-  const dots = [...carousel.querySelectorAll(".event-showcase-dots button")];
-  const prev = carousel.querySelector(".event-showcase-arrow.prev");
-  const next = carousel.querySelector(".event-showcase-arrow.next");
   if (!slides.length) return;
 
-  let index = 0;
+  let startIndex = 0;
   let timer = null;
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const interval = Number(carousel.dataset.interval) || 4000;
+  const interval = 5000;
 
-  function showSlide(newIndex) {
-    index = (newIndex + slides.length) % slides.length;
-    slides.forEach((slide, i) => slide.classList.toggle("active", i === index));
-    dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+  function visibleCount() {
+    if (window.matchMedia("(max-width: 700px)").matches) return 1;
+    if (window.matchMedia("(max-width: 1000px)").matches) return 2;
+    return 3;
+  }
+
+  function showSet(index = 0) {
+    const count = visibleCount();
+    startIndex = ((index % slides.length) + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      const offset = (i - startIndex + slides.length) % slides.length;
+      slide.classList.toggle("active", offset < count);
+    });
+  }
+
+  function nextSet() {
+    showSet(startIndex + visibleCount());
   }
 
   function start() {
     if (reducedMotion) return;
     stop();
-    timer = setInterval(() => showSlide(index + 1), interval);
+    timer = setInterval(nextSet, interval);
   }
 
   function stop() {
-    if (timer) {
-      clearInterval(timer);
-      timer = null;
-    }
+    if (timer) { clearInterval(timer); timer = null; }
   }
 
-  prev?.addEventListener("click", () => { showSlide(index - 1); start(); });
-  next?.addEventListener("click", () => { showSlide(index + 1); start(); });
-  dots.forEach((dot, i) => dot.addEventListener("click", () => { showSlide(i); start(); }));
+  let lastCount = visibleCount();
+  window.addEventListener("resize", () => {
+    const count = visibleCount();
+    if (count !== lastCount) { lastCount = count; showSet(startIndex); }
+  });
 
   carousel.addEventListener("mouseenter", stop);
   carousel.addEventListener("mouseleave", start);
   carousel.addEventListener("focusin", stop);
-  carousel.addEventListener("focusout", (event) => {
-    if (!carousel.contains(event.relatedTarget)) start();
-  });
+  carousel.addEventListener("focusout", event => { if (!carousel.contains(event.relatedTarget)) start(); });
 
-  showSlide(0);
+  showSet(0);
   start();
 });
