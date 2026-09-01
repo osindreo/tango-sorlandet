@@ -453,49 +453,5 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .event-showcase-caption{display:none!important}
 
 
-/* V76 – Instruksjonsvideoer: Facebook Reels embeddes der Facebooks
-   offentlige Reel-format støtter embed. Original lenke beholdes som fallback. */
-.reel-list{columns:1;list-style:none;padding-left:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem 1.5rem}
-.reel-list li.reel-group-start{margin-top:0;padding-top:0;border-top:0}
-.facebook-reel-card{
-  background:rgba(0,0,0,.035);
-  border:1px solid var(--line);
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:var(--shadow);
-}
-.facebook-reel-title{
-  padding:.9rem 1rem .75rem;
-  font-weight:600;
-  line-height:1.35;
-}
-.facebook-reel-frame{
-  position:relative;
-  width:100%;
-  aspect-ratio:9/16;
-  min-height:420px;
-  background:#111;
-  overflow:hidden;
-}
-.facebook-reel-frame iframe{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  border:0;
-}
-.facebook-reel-fallback{
-  padding:.7rem 1rem .9rem;
-  background:rgba(255,255,255,.55);
-}
-.facebook-reel-fallback a{
-  font-size:.9rem;
-}
-@media (max-width:900px){
-  .reel-list{grid-template-columns:1fr}
-}
-@media (max-width:560px){
-  .reel-list{grid-template-columns:1fr}
-  .facebook-reel-frame{min-height:360px}
-}
-
+/* V77 – note about embeddable Facebook Reels under upcoming events */
+.event-reel-note { margin-top: 1rem; padding: .9rem 1rem; border-left: 3px solid currentColor; border-radius: .35rem; opacity: .9; }

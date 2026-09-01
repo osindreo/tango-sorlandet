@@ -110,6 +110,20 @@ const T = {"no":{"Hva skjer":"Hva skjer","Bli med":"Bli med","Tango overalt":"Ta
   "Fra klassiske orkestre som Di Sarli, D'Arienzo, Pugliese og Troilo til nuevo tango, neotango og electrotango.": "Desde orquestas clásicas como Di Sarli, D’Arienzo, Pugliese y Troilo hasta nuevo tango, neotango y electrotango."
 });
 
+
+  Object.assign(T.no, {
+    "Tips:": "Tips:",
+    "F.eks. kan Facebook Reels ofte bygges inn og vises her som reklame for kommende arrangementer.": "F.eks. kan Facebook Reels ofte bygges inn og vises her som reklame for kommende arrangementer."
+  });
+  Object.assign(T.en, {
+    "Tips:": "Tip:",
+    "F.eks. kan Facebook Reels ofte bygges inn og vises her som reklame for kommende arrangementer.": "For example, Facebook Reels can often be embedded and shown here as promotion for upcoming events."
+  });
+  Object.assign(T.es, {
+    "Tips:": "Consejo:",
+    "F.eks. kan Facebook Reels ofte bygges inn og vises her som reklame for kommende arrangementer.": "Por ejemplo, los Reels de Facebook a menudo se pueden insertar y mostrar aquí como promoción de próximos eventos."
+  });
+
   const baseText = new Map();
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   let node;
@@ -125,6 +139,9 @@ const T = {"no":{"Hva skjer":"Hva skjer","Bli med":"Bli med","Tango overalt":"Ta
       if (dict[original] !== undefined) textNode.nodeValue = dict[original];
     });
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+    const languageLabels = {no:'Språkvalg', en:'Language selection', es:'Selección de idioma'};
+    const switcher = document.querySelector('.language-switcher');
+    if (switcher) switcher.setAttribute('aria-label', languageLabels[lang] || languageLabels.no);
     localStorage.setItem('tangoSorlandet_language', lang);
   }
 
