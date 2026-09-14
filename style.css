@@ -401,56 +401,39 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .social-dance-message p:last-child{margin-bottom:0}
 
 
-/* V73 – responsive image showcase under Kommende arrangementer */
+/* V88 – én reklameplass om gangen, med automatisk rotasjon */
 .event-showcase{
-  position:relative;
   margin-top:2.5rem;
+  padding:0 1rem;
 }
-.event-showcase-viewport{
-  overflow:hidden;
-  border-radius:24px;
-  border:1px solid var(--line);
-  box-shadow:var(--shadow);
-  background:#17110f;
-}
-.event-showcase-track{gap:1rem;
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+.event-showcase-track{
+  display:block;
   width:100%;
-  min-height:260px;
 }
 .event-showcase-slide{
   display:none;
-  min-width:0;
-  aspect-ratio:5/8;
+  width:100%;
+  margin:0 auto;
+  overflow:hidden;
+  border-radius:18px;
+  background:var(--card);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
 }
-.event-showcase-slide.active{
+.event-showcase-slide.is-active{
   display:block;
-  animation:showcaseFade .45s ease both;
 }
-@keyframes showcaseFade{from{opacity:0}to{opacity:1}}
 .event-showcase-slide img{
   display:block;
   width:100%;
-  height:100%;
-  object-fit:cover;
-}
-@media(max-width:1000px){
-  .event-showcase-track{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+  height:auto;
+  max-width:100%;
+  object-fit:contain;
 }
 @media(max-width:700px){
-  .event-showcase{margin-top:1.8rem}
-  .event-showcase-viewport{border-radius:18px}
-  .event-showcase-track{grid-template-columns:1fr;min-height:0}
-  .event-showcase-slide{aspect-ratio:5/8}
+  .event-showcase{margin-top:1.8rem;padding:0 .5rem;}
+  .event-showcase-slide{border-radius:14px;}
 }
-@media(prefers-reduced-motion:reduce){
-  .event-showcase-slide.active{animation:none}
-}
-
-/* Reklamevisningen bruker ferdig komponerte bilder – ingen ekstra tekst oppå bildene. */
-.event-showcase-caption{display:none!important}
-
 
 /* V77 – note about embeddable Facebook Reels under upcoming events */
 .event-reel-note { margin-top: 1rem; padding: .9rem 1rem; border-left: 3px solid currentColor; border-radius: .35rem; opacity: .9; }
@@ -501,12 +484,56 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
   .reel-fullscreen-btn{right:.55rem;bottom:.55rem}
 }
 
-/* V78 – air around advertisement cards */
-.event-showcase{padding:0 1rem}
-.event-showcase-viewport{border-radius:22px}
-@media(max-width:700px){.event-showcase{padding:0 .5rem}.event-showcase-track{gap:.75rem}}
 .partner-call{margin-top:1.5rem;padding:1.5rem;border:1px solid rgba(120,95,70,.25);border-radius:16px;background:rgba(255,255,255,.55)}
 .partner-call h3{margin:.35rem 0 .7rem}
 .partner-call p{max-width:760px}
 .partner-call .eyebrow{margin-bottom:.2rem}
+
+
+
+/* V82 – history and tango-formidler emphasis */
+.history-highlight{margin:1.2rem 0 0;padding:1rem 1.1rem;border-left:3px solid currentColor;background:rgba(255,255,255,.04);border-radius:0 10px 10px 0;}
+
+
+/* V85 – dansepartner-annonse for introduksjoner */
+.partner-search-section{
+  background:var(--soft, #f6f2ed);
+}
+.partner-search-card{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+  gap:0;
+  overflow:hidden;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.partner-search-image{
+  background:#1a110f;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.partner-search-image img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:760px;
+  object-fit:contain;
+}
+.partner-search-copy{
+  padding:clamp(1.5rem, 4vw, 3rem);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.partner-search-copy h3{margin-top:0}
+.partner-search-copy .btn{
+  align-self:flex-start;
+  margin-top:.5rem;
+}
+@media(max-width:760px){
+  .partner-search-card{grid-template-columns:1fr}
+  .partner-search-image img{max-height:none}
+}
 

@@ -1,62 +1,5 @@
 const o=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add("show")));document.querySelectorAll(".reveal").forEach(x=>o.observe(x));
 
-/* V71 – responsive event image showcase: 3 desktop / 2 tablet / 1 mobile, 5 seconds. */
-document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.querySelector(".event-showcase");
-  if (!carousel) return;
-  const slides = [...carousel.querySelectorAll(".event-showcase-slide")];
-  if (!slides.length) return;
-
-  let startIndex = 0;
-  let timer = null;
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const interval = 5000;
-
-  function visibleCount() {
-    if (window.matchMedia("(max-width: 700px)").matches) return 1;
-    if (window.matchMedia("(max-width: 1000px)").matches) return 2;
-    return 3;
-  }
-
-  function showSet(index = 0) {
-    const count = visibleCount();
-    startIndex = ((index % slides.length) + slides.length) % slides.length;
-    slides.forEach((slide, i) => {
-      const offset = (i - startIndex + slides.length) % slides.length;
-      slide.classList.toggle("active", offset < count);
-    });
-  }
-
-  function nextSet() {
-    showSet(startIndex + visibleCount());
-  }
-
-  function start() {
-    if (reducedMotion) return;
-    stop();
-    timer = setInterval(nextSet, interval);
-  }
-
-  function stop() {
-    if (timer) { clearInterval(timer); timer = null; }
-  }
-
-  let lastCount = visibleCount();
-  window.addEventListener("resize", () => {
-    const count = visibleCount();
-    if (count !== lastCount) { lastCount = count; showSet(startIndex); }
-  });
-
-  carousel.addEventListener("mouseenter", stop);
-  carousel.addEventListener("mouseleave", start);
-  carousel.addEventListener("focusin", stop);
-  carousel.addEventListener("focusout", event => { if (!carousel.contains(event.relatedTarget)) start(); });
-
-  showSet(0);
-  start();
-});
-
-
 /* V78 – fullscreen for embedded Facebook instruction reels */
 document.addEventListener('click', function(e){
   const btn = e.target.closest('.reel-fullscreen-btn');
@@ -76,3 +19,17 @@ document.addEventListener('click', function(e){
     // Facebook's own player fullscreen control remains available.
   }
 });
+
+
+/* V88 – rotate the three advertisement images independently of screen size */
+(function(){
+  const slides = Array.from(document.querySelectorAll('.event-showcase-slide'));
+  if (slides.length < 2) return;
+  let current = 0;
+  slides[current].classList.add('is-active');
+  setInterval(() => {
+    slides[current].classList.remove('is-active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('is-active');
+  }, 5000);
+})();
