@@ -33,3 +33,23 @@ document.addEventListener('click', function(e){
     slides[current].classList.add('is-active');
   }, 5000);
 })();
+
+
+/* V89 – Dropbox File Request
+   Bytt bare ut URL-en under med lenken fra Dropbox:
+   Dropbox → File requests → New request → Copy link
+*/
+(function(){
+  const DROPBOX_UPLOAD_URL = "https://www.dropbox.com/request/7lkmk1b7n4ht7znbip6k";
+  const btn = document.getElementById("dropboxUploadBtn");
+  if (!btn) return;
+
+  if (DROPBOX_UPLOAD_URL.startsWith("http")) {
+    btn.href = DROPBOX_UPLOAD_URL;
+  } else {
+    btn.addEventListener("click", function(e){
+      e.preventDefault();
+      alert("Dropbox-opplastingen er ikke koblet til ennå. Legg inn Dropbox File Request-lenken i script.js.");
+    });
+  }
+})();
