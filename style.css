@@ -551,3 +551,7 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 /* V91 – forklaring på verdien av bilder og video */
 .story-cta .upload-heading{font-size:1.55rem;margin-top:1.35rem;margin-bottom:.55rem}
 .story-cta p{line-height:1.55}
+
+/* V93 – regional SEO: readable location context without keyword stuffing */
+.agder-search-links{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.25rem 0}
+.agder-search-links span{display:inline-block;padding:.35rem .7rem;border:1px solid rgba(120,90,70,.18);border-radius:999px;background:rgba(255,255,255,.55);font-size:.92rem}
