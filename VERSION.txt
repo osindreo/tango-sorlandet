@@ -1,1 +1,11 @@
-Tango Sørlandet V94 – SEO for tango i hele Agder
+Tango Sørlandet V95
+SEO/content revision – September 2026
+
+Changes:
+- Added "Hvem passer argentinsk tango for?"
+- Added "Ny til argentinsk tango?" FAQ section
+- Added explicit beginner/solo/partner/social/culture search intent
+- Refined title and meta descriptions for tango in Agder
+- Added navigation link to the new audience section
+- Added FAQ structured data
+- Preserved existing design, sections, images, videos and functionality
