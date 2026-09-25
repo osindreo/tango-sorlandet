@@ -1,3 +1,12 @@
 Tango Sørlandet V96
+SEO/rekruttering revisjon – September 2026
 
-V96: Recruitment-first landing flow. Stronger newcomer messaging, clearer first-step CTA, compact FAQ, and regional Agder SEO retained.
+Changes:
+- Styrket inngangen for personer som er nysgjerrige på argentinsk tango
+- Ny seksjon «Passer argentinsk tango for meg?»
+- Ny seksjon «Slik begynner du»
+- Tydeliggjort at man kan komme alene og ikke trenger danseerfaring
+- Beholdt regional SEO-fokus for hele Agder
+- Forbedret meta description med nybegynner-/alene-intent
+- Beholdt eksisterende design, bilder, arrangementer og videobibliotek
+- Ingen kunstige byundersider eller omfattende redesign
