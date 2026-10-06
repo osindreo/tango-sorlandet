@@ -1,0 +1,5 @@
+Tango Sørlandet v97 – SEO patch 2
+
+Endret seksjonen «TANGO I AGDER» for å fjerne den visuelle oppramsingen av alle kommuner og aktivitetstyper. Beholder naturlige søkeord og geografisk relevans uten keyword stuffing.
+
+Bytt ut index.html i v97 med denne filen.
