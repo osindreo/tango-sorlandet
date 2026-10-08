@@ -1,5 +1,7 @@
-Tango Sørlandet v97 – SEO patch 2
+NY VERSJON – BENEFIT-FIRST
 
-Endret seksjonen «TANGO I AGDER» for å fjerne den visuelle oppramsingen av alle kommuner og aktivitetstyper. Beholder naturlige søkeord og geografisk relevans uten keyword stuffing.
-
-Bytt ut index.html i v97 med denne filen.
+- Hero er vridd fra «tango først» til mennesker, musikk, nærvær og sosialt miljø.
+- Ny seksjon «Hva kan du få ut av tango – hvis du ikke leter etter dans?»
+- Ny tydelig, men ikke ekskluderende del om hva mange menn kan få ut av miljøet.
+- Eksisterende tango-, kurs-, historie- og arrangementinnhold beholdes.
+- Bilder/video er fortsatt helt separate i assets/images og assets/video.

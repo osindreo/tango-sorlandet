@@ -30,7 +30,7 @@ a{color:inherit}
 .links a:hover{color:var(--accent)}
 .hero{
   min-height:86vh;display:flex;align-items:flex-end;
-  background:url("assets/hero.png") center/cover no-repeat;
+  background:url("assets/images/hero.png") center/cover no-repeat;
   padding:0 7vw 8vh;position:relative
 }
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,12,10,.34),transparent 68%),linear-gradient(0deg,rgba(20,12,10,.42),transparent 55%)}
@@ -646,3 +646,11 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
     padding:1.35rem 1.25rem 1.5rem;
   }
 }
+
+
+/* Benefit-first entry section */
+.benefit-section .card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin-top:1.5rem; }
+.benefit-section .card { padding:1.25rem; }
+.benefit-section .highlight-box { margin-top:1.5rem; padding:1.5rem; border-radius:18px; }
+@media (max-width:900px) { .benefit-section .card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:600px) { .benefit-section .card-grid { grid-template-columns:1fr; } }
