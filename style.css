@@ -628,10 +628,19 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
     grid-template-columns:1fr;
     margin-bottom:2rem;
   }
-  .what-happens-feature-media,
+  /* Preserve the full portrait image on mobile instead of cropping it. */
+  .what-happens-feature-media{
+    min-height:0;
+    height:auto;
+    background:#17110f;
+  }
   .what-happens-feature-media img{
-    min-height:240px;
-    height:240px;
+    display:block;
+    width:100%;
+    height:auto;
+    min-height:0;
+    aspect-ratio:auto;
+    object-fit:contain;
   }
   .what-happens-feature-copy{
     padding:1.35rem 1.25rem 1.5rem;
