@@ -151,3 +151,15 @@ const T = {"no":{"Hva skjer":"Hva skjer","Bli med":"Bli med","Tango overalt":"Ta
 
   document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => apply(b.dataset.lang)));
   apply(localStorage.getItem('tangoSorlandet_language') || 'no');
+
+
+  Object.assign(T.en, {
+    "Bildet er AI-generert. Ekte bilder fra tangoen på Sørlandet er enda bedre! Har du et bilde som passer bedre? ":"This image is AI-generated. Real photos of tango in Southern Norway are even better! Have a photo that fits better? ",
+    "Send det gjerne inn":"Feel free to send it in",
+    " – så lenge du har rett til å dele det.":" — as long as you have the right to share it."
+  });
+  Object.assign(T.es, {
+    "Bildet er AI-generert. Ekte bilder fra tangoen på Sørlandet er enda bedre! Har du et bilde som passer bedre? ":"La imagen está generada por IA. ¡Las fotos reales del tango en el sur de Noruega son aún mejores! ¿Tienes una foto más adecuada? ",
+    "Send det gjerne inn":"Envíala con gusto",
+    " – så lenge du har rett til å dele det.":" — siempre que tengas derecho a compartirla."
+  });

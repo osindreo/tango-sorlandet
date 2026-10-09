@@ -654,3 +654,21 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .benefit-section .highlight-box { margin-top:1.5rem; padding:1.5rem; border-radius:18px; }
 @media (max-width:900px) { .benefit-section .card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (max-width:600px) { .benefit-section .card-grid { grid-template-columns:1fr; } }
+
+
+/* Kort, diskret merknad under hero-teksten om illustrasjonsbildet */
+.hero-image-note{
+  max-width:620px;
+  margin:1.15rem 0 0;
+  font-size:.88rem;
+  line-height:1.55;
+  color:rgba(255,255,255,.92);
+  text-shadow:0 1px 8px rgba(0,0,0,.45);
+}
+.hero-image-note a{
+  color:#fff;
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.hero-image-note a:hover{opacity:.82}
