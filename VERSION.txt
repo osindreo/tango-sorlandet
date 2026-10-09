@@ -1,5 +1,5 @@
-TangoSørlandet – Benefit-first version
-2026-10-08
+Tango Sørlandet – V98
+Dato: 2026-10-09
+Fokus: Omstrukturert innhold, færre gjentakelser, tydeligere innganger for nye besøkende.
 
-Ny inngang til siden med fokus på hva miljøet kan gi mennesker som ikke nødvendigvis søker etter dans eller tango, med en egen tydelig del om hva mange menn kan få ut av miljøet.
-Media beholdes separat i assets/images og assets/video.
+Denne pakken inneholder nettsidefiler, ikke mediebiblioteket. Behold/kopier eksisterende assets/ mappe ved oppdatering.

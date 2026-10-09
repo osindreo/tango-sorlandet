@@ -1,24 +1,20 @@
-# TangoSørlandet
+# Tango Sørlandet – V98
 
-## Ny filstruktur
+Denne versjonen rydder opp i innholdet på forsiden og samler gjentakende budskap.
 
-Nettsiden og media er holdt mest mulig adskilt:
+## Endringer
+- Kortere hovednavigasjon med tydeligere rekkefølge.
+- Fjernet gjentakende introduksjons- og fordelsseksjoner.
+- Samlet informasjon om hva tango kan tilby og hvordan man kommer i gang.
+- Beholdt kalender, klubboversikt, tangomusikk, videoressurser, idebank, Tango Stories og kontaktmuligheter.
+- Oppdatert metadata for søk og deling.
+- Oppdatert engelske og spanske oversettelser for de nye hovedtekstene.
 
-- `index.html` – innhold og struktur
-- `style.css` – utseende
-- `script.js` – funksjoner
-- `lang.js` – språk
-- `assets/images/` – bilder
-- `assets/video/` – lokale videofiler
+## Viktig om bilder og video
+Denne ZIP-filen inneholder nettsidefiler, ikke mediebiblioteket. Den opplastede ZIP-filen hadde ingen faktiske filer i `assets/`. **Behold den eksisterende `assets/`-mappen** når du erstatter nettsidefilene, slik at egne bilder og videoer fortsatt finnes på riktige stier.
 
-### Arbeidsflyt
-
-Når du gjør endringer i tekst, layout eller funksjoner, kan du jobbe med nettsidefilene uten å legge ved bildene i ChatGPT.
-
-Når bilder/video skal endres, håndteres de separat i `assets/images/` og `assets/video/`.
-
-### GitHub Pages
-
-Mappene `assets/images/` og `assets/video/` må fortsatt ligge i GitHub-repositoriet for at nettsiden skal kunne vise media. Men de trenger ikke endres når du bare gjør en nettsideendring.
-
-Se også `assets/README.md`.
+## Publisering
+1. Ta sikkerhetskopi av dagens versjon.
+2. Kopier inn `index.html`, `style.css`, `script.js`, `lang.js`, `CNAME`, `robots.txt` og `sitemap.xml`.
+3. Behold `assets/`-mappen og eventuelle øvrige filer du bruker.
+4. Test på mobil og PC før du publiserer.
