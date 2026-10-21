@@ -53,3 +53,36 @@ document.addEventListener('click', function(e){
     });
   }
 })();
+
+
+// Responsive full-screen view for the venue invitation image.
+// Wait until the page markup exists; this also works with local file:// preview.
+function initVenueInvitationModal() {
+  const trigger = document.querySelector('.venue-invitation-open');
+  const modal = document.getElementById('venueImageModal');
+  if (!trigger || !modal || trigger.dataset.modalReady === 'true') return;
+  trigger.dataset.modalReady = 'true';
+  const closeButton = modal.querySelector('.venue-image-close');
+  if (!closeButton) return;
+  const openModal = () => {
+    modal.hidden = false;
+    document.body.classList.add('venue-modal-open');
+    closeButton.focus();
+  };
+  const closeModal = () => {
+    modal.hidden = true;
+    document.body.classList.remove('venue-modal-open');
+    trigger.focus();
+  };
+  trigger.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', (event) => { if (event.target === modal) closeModal(); });
+  document.addEventListener('keydown', (event) => {
+    if (!modal.hidden && event.key === 'Escape') closeModal();
+  });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initVenueInvitationModal);
+} else {
+  initVenueInvitationModal();
+}

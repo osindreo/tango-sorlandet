@@ -582,6 +582,12 @@
 <p>Vi inviterer tangoformidlere, instruktører, DJ-er, musikere, arrangører, klubber, kulturarenaer, restauranter, hoteller og andre samarbeidspartnere som har lyst til å bidra.</p>
 <a class="btn" href="#kontakt">Ta kontakt</a>
 </div>
+<div class="venue-invitation-preview">
+<button class="venue-invitation-open" type="button" aria-label="Åpne invitasjonen til potensielle verter i stort format" aria-haspopup="dialog">
+<img src="assets/vertskap-invitasjon.png" alt="Invitasjon til samarbeid med hoteller, restauranter, kulturarenaer, firmaarrangementer og festivaler på Sørlandet">
+<span>Se invitasjonen i større format <span aria-hidden="true">↗</span></span>
+</button>
+</div>
 <div class="invite-list">
 <div><strong>💃 Tangoformidler</strong><span>Hjelp andre med å oppdage tango. Du trenger ikke være profesjonell.</span></div>
 <div><strong>🎶 DJ / musiker</strong><span>Skap musikken og stemningen.</span></div>
@@ -719,5 +725,11 @@
   }
 })();
 </script>
+
+<div class="venue-image-modal" id="venueImageModal" role="dialog" aria-modal="true" aria-label="Invitasjon til potensielle verter" hidden>
+  <button class="venue-image-close" type="button" aria-label="Lukk stort bilde">×</button>
+  <img src="assets/vertskap-invitasjon.png" alt="Full invitasjon til samarbeid om argentinsk tango på Sørlandet">
+</div>
+
 </body>
 </html>
