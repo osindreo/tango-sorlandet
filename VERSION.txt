@@ -1,1 +1,1 @@
-v102 - profilbild alltid synlig; forstorringsfunksjon initialiseres etter DOM er lastet.
+v100 - profileringsillustrasjon vises stor direkte i seksjonen; klikk for fullskjermsforstorring.
