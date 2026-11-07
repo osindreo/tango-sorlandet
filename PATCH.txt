@@ -1,1 +1,1 @@
-V100: Endret stotteprofilering fra to kolonner til stor illustrasjon over teksten. Bildet vises direkte uten at brukeren ma klikke; klikk pa bildet apner fortsatt modal for forstorring.
+V102: Rettet timingfeil i JavaScript som gjorde at klikk pa profilbildet ikke apnet forstorringsvinduet. Assets-mappen og bildefilen er uendret.
