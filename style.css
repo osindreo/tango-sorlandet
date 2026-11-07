@@ -685,3 +685,20 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .venue-image-close { position:absolute; top:10px; right:16px; z-index:1; width:44px; height:44px; border:0; border-radius:50%; background:rgba(255,255,255,.16); color:#fff; font-size:34px; line-height:1; cursor:pointer; }
 body.venue-modal-open { overflow:hidden; }
 @media (max-width:600px) { .venue-image-modal { padding:8px; } .venue-image-modal img { max-height:90vh; } .venue-image-close { top:6px; right:6px; } }
+
+
+/* V99 – diskret støtte til fysisk profilering, med forstørret bilde */
+.profile-support{max-width:900px;margin:2.2rem auto 0;text-align:left}
+.profile-support details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.15rem 0}
+.profile-support summary{cursor:pointer;padding:.85rem .2rem;color:var(--muted);font-size:.94rem;font-weight:600}
+.profile-support summary:hover{color:var(--accent)}
+.profile-image-open{display:block;width:100%;max-width:820px;margin:0 auto 1rem;padding:0;border:0;background:transparent;color:var(--muted);cursor:zoom-in;text-align:center;outline:none}
+.profile-image-open:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:12px}
+.profile-image-open img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.12)}
+.profile-image-open span{display:inline-block;margin-top:.55rem;font-size:.82rem;text-decoration:underline;text-underline-offset:3px}
+.profile-support-content{display:block;padding:1rem 0 1.4rem}
+.profile-support-copy{font-size:.94rem;line-height:1.6;max-width:820px;margin:0 auto;width:100%}
+.profile-support-copy p{margin:0 0 .7rem}
+.profile-support-copy ul{margin:.2rem 0 .8rem;padding-left:1.25rem}
+.profile-support-copy h3{font-size:1.45rem;margin:.9rem 0 .4rem}
+@media(max-width:650px){.profile-image-open{max-width:100%}}

@@ -86,3 +86,37 @@ if (document.readyState === 'loading') {
 } else {
   initVenueInvitationModal();
 }
+
+
+/* V102 – bind the profile-image zoom after the full document is parsed */
+(function(){
+  function initProfileImageZoom(){
+    const trigger = document.querySelector('.profile-image-open');
+    const modal = document.getElementById('profileImageModal');
+    if (!trigger || !modal || trigger.dataset.zoomReady === 'true') return;
+    const closeButton = modal.querySelector('.venue-image-close');
+    if (!closeButton) return;
+    const open = () => {
+      modal.hidden = false;
+      document.body.classList.add('venue-modal-open');
+      closeButton.focus();
+    };
+    const close = () => {
+      modal.hidden = true;
+      document.body.classList.remove('venue-modal-open');
+      trigger.focus();
+    };
+    trigger.dataset.zoomReady = 'true';
+    trigger.addEventListener('click', open);
+    closeButton.addEventListener('click', close);
+    modal.addEventListener('click', event => { if (event.target === modal) close(); });
+    document.addEventListener('keydown', event => {
+      if (!modal.hidden && event.key === 'Escape') close();
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initProfileImageZoom);
+  } else {
+    initProfileImageZoom();
+  }
+})();

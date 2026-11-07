@@ -1,5 +1,1 @@
-Tango Sørlandet – V98
-Dato: 2026-10-09
-Fokus: Omstrukturert innhold, færre gjentakelser, tydeligere innganger for nye besøkende.
-
-Denne pakken inneholder nettsidefiler, ikke mediebiblioteket. Behold/kopier eksisterende assets/ mappe ved oppdatering.
+v102 - profilbild alltid synlig; forstorringsfunksjon initialiseres etter DOM er lastet.
