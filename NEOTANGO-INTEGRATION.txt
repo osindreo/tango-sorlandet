@@ -1,0 +1,11 @@
+Neotango Radio integration
+
+The home page now includes the AzuraCast public embed for the Neotango station:
+https://radio.neotango.it/public/mus/embed?theme=dark
+
+Fallback link (opens the station public page):
+https://radio.neotango.it/public/mus
+
+The embed uses the station's public player rather than a guessed direct audio mount. Playback requires the visitor to press Play. If the station owner disables embedding or the browser blocks the frame, the fallback link remains available.
+
+The existing Argentine Tango Radio player has been retained.

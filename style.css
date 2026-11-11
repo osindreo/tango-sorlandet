@@ -120,14 +120,57 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
 .radio-section{background:#f6f0ea}
 .radio-note{color:var(--muted);font-size:.92rem}
 .radio-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
-.radio-card{display:grid;grid-template-columns:130px 1fr;gap:1.4rem;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:1.45rem;box-shadow:var(--shadow)}
-.radio-badge{width:112px;height:112px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;background:#211613;color:#f8e8df;border:4px solid #7b3f32;font-family:Georgia,serif;font-size:.72rem;line-height:1.05;letter-spacing:.06em}
-.radio-badge strong{font-size:1.15rem;letter-spacing:.02em}
+.radio-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:.55rem;
+  min-width:0;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:1.5rem;
+  box-shadow:var(--shadow)
+}
+.radio-badge{
+  width:112px;height:112px;flex:0 0 112px;
+  border-radius:50%;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;
+  padding:9px;
+  box-sizing:border-box;
+  overflow:hidden;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  background:#211613;color:#f8e8df;
+  border:4px solid #7b3f32;
+  font-family:Georgia,serif;
+  font-size:.58rem;
+  line-height:1.12;
+  letter-spacing:.025em
+}
+.radio-badge span{display:block;max-width:100%}
+.radio-badge strong{display:block;font-size:1.05rem;letter-spacing:.01em}
 .radio-badge.passion{border-radius:18px;background:#7b3f32;color:#fff7f1;border-color:#2b1c18}
+.radio-badge-arg{font-size:.54rem;letter-spacing:0}
+.radio-badge-arg strong{font-size:1.05rem}
+.neo-badge{background:#f6f0ea;border-color:#b88d80;color:#7b3f32;font-size:.66rem;letter-spacing:.07em}
+.neo-badge strong{font-size:1.05rem}
+.radio-copy{width:100%;max-width:100%;min-width:0}
+.radio-copy .eyebrow{margin:.1rem 0 .35rem}
 .radio-copy h3{color:var(--accent);margin-bottom:.35rem}
 .radio-copy p:not(.eyebrow){color:var(--muted)}
-.radio-copy audio{display:block;width:100%;margin:1rem 0 .8rem}
-
+.radio-copy audio{display:block;width:100%;max-width:100%;margin:.8rem 0 .7rem}
+.neo-player-wrap{
+  width:100%;max-width:100%;min-width:0;
+  margin:.8rem 0 .65rem;
+  border:0;border-radius:12px;overflow:visible;
+  background:#f1f2f3
+}
+.neo-player-wrap iframe{display:block;width:100%;max-width:100%;height:108px;border:0;border-radius:12px;background:#f1f2f3;overflow:hidden}
+.radio-fallback-note{font-size:.78rem!important;margin-top:.4rem}
 @media(max-width:900px){
   .links{display:none}
   .hero{min-height:76vh;padding:0 1.25rem 4rem;background-position:68% center}
@@ -148,7 +191,7 @@ footer{background:#201613;color:#eee;text-align:center;padding:3.5rem 1.5rem}
   .hero h1{font-size:3.25rem}
   .hero-lead{font-size:1rem}
   .section-head{display:block}
-  .radio-card{grid-template-columns:1fr;padding:1.25rem}
+  .radio-card{padding:1.25rem}
   .radio-badge{width:96px;height:96px}
   .section-head .text-link{display:inline-block;margin-top:1rem}
   .gallery{grid-template-columns:repeat(2,1fr)}
